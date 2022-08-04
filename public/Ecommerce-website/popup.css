@@ -1,0 +1,159 @@
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal-parent.active {
+    display: flex;
+}
+
+.modal {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.close-window {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.116);
+    width: 15px;
+    padding-left: 5px;
+}
+
+.cart-items {
+    display: inline-flex;
+}
+
+.small-product {
+    width: 50px;
+    height: 50px;
+}
+
+.item-name {
+    margin: 20px 25px;
+    font-size: 15px;
+}
+
+.quantity-box {
+    width: 47px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid gray;
+    padding-left: 10px;
+}
+
+.item-price {
+    width: 80px;
+    margin: 20px 29px;
+}
+
+.remove-item {
+    width: 47px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    color: gray;
+}
+
+.sub-total {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+}
+
+
+
+.mid-btn {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    margin-top: 10px;
+}
+
+.mid-btn button {
+    background-color: black;
+    color: white;
+    width: 175px;
+    height: 25px;
+    border: none;
+    margin-right: 20px;
+}
+
+.large-btn {
+    margin: 10px 10px 10px;
+}
+
+.large-btn button {
+    background-color: black;
+    color: white;
+    width: 370px;
+    height: 25px;
+    border: none;
+    margin-right: 20px;
+}
+
+.rel-prod {
+    margin-top: 26px;
+}
+
+.rel-prod .topic {
+    margin: 100px;
+    font-weight: bold;
+}
+
+.rel-prod img {
+    display: inline-block;
+    width: 226px;
+    margin-left: 66px;
+    margin-top: 12px;
+}
+
+.rel-prod .name {
+    display: inline-block;
+    margin: 0 160px;
+    padding-top: 2px;
+}
+
+.rel-prod .price {
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
+.rel-prod .size {
+    display: inline-block;
+    margin: 12px 135px;
+    background-color: gray;
+    color: white;  
+}
+
+.rel-prod button{
+    display: inline-block;
+    margin: 20px 5px;
+    width: 180px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;    
+}
+
+button {
+    cursor: pointer;
+}

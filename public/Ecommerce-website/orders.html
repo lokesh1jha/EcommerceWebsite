@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="orderpage.css" />
+
+    <title>Orders</title>
+    <style>
+        .box {
+            display: inline-flex;
+            border: 1px solid #f7a239;
+        }
+
+        .box img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .order {
+            list-style: none;
+            display: inline-flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a class="active" href="home.html">HOME</a></li>
+                <li><a href="index.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="order-container" id="orderCont">
+        
+    </div>
+
+    <!-- Footing  -->
+    <div class="footer">
+        <h3 class="name">The Generics</h3>
+        <div class="logos">
+            <img src="./images/youtube-icon.jpg" alt="">
+            <img src="./images/spotify-icon.png" alt="">
+            <img src="./images/facebook-icon.png" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="order.js"></script>
+</body>
+
+</html>
