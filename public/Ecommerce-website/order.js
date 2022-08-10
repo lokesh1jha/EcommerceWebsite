@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log(response.data.orders[1].products[0].title);
             const ordersData = response.data.orders;
 
-            for (let i = 0; i < ordersData.length; i++) {
+            for (let i = ordersData.length -1; i >= 0 ; i--) {
                 let products;
                 if (ordersData[i].products.length == 0) {
                     continue;

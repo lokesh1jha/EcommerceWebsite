@@ -39,11 +39,20 @@ app.use((req, res, next) => {
     })
     .catch(err => console.log(err));
 });
-
+ 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
+app.use((req, res) => {
+  console.log(`url is : ${req.url}`)
+  res.sendFile(path.join(__dirname, `public/Ecommerce-website/${req.url}`));
+}) 
+
+
 app.use(errorController.get404);
+
+
+
 
 Product.belongsTo(User, { constraints: true, onDelete: 'CASCADE' });
 User.hasMany(Product);

@@ -43,12 +43,12 @@ nav button {
   margin-right: 7px;
   border-color: aqua;
   border-radius: 17px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 nav span {
-  color: aqua;
+  color: white;
   cursor: pointer;
 }
 
@@ -59,6 +59,7 @@ nav .popup {
 #myorders {
   width: fit-content;
   margin-left: 300px;
+  color: black;
 }
 
 .heading {
