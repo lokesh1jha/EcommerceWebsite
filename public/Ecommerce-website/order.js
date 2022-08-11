@@ -3,7 +3,7 @@ const orderCont = document.getElementById('orderCont')
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    axios.get('http://localhost:3000/orders')
+    axios.get('http://54.200.64.7:3000/orders')
         .then(response => {
             console.log('clicked2');
             return response;

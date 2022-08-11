@@ -59,7 +59,7 @@ open.addEventListener("click", () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     const pageNumber = 1;
-    axios.get(`http://localhost:3000?page=${pageNumber}`)
+    axios.get(`http://54.200.64.7:3000?page=${pageNumber}`)
         .then(data => {
             if (data.request.status === 200) {
                 const products = data.data.products;
@@ -81,11 +81,11 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        axios.get(`http://localhost:3000/products`)
+        axios.get(`http://54.200.64.7:3000/products`)
         .then(products => {
             totalProduct = products.data.products.length;
         })
-            axios.get(`http://localhost:3000?page=1`)
+            axios.get(`http://54.200.64.7:3000?page=1`)
         .then(products => {
             ITEM_PER_PAGE = products.data.products.length;
         })  
@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 function getProducts(pageNumber) {
-    axios.get(`http://localhost:3000?page=${pageNumber}`)
+    axios.get(`http://54.200.64.7:3000?page=${pageNumber}`)
         .then(data => {
             console.log(data);
             if (data.request.status === 200) {
@@ -121,7 +121,7 @@ function getProducts(pageNumber) {
 
 function addToCart(productId) {
 
-    axios.post('http://localhost:3000/cart', { productId: productId })
+    axios.post('http://54.200.64.7:3000/cart', { productId: productId })
         .then(response => {
             if (response.status === 200) {
                 notifyUsers(response.data.message);
@@ -137,7 +137,7 @@ function addToCart(productId) {
 }
 
 function getCartDetails() {
-    axios.get('http://localhost:3000/cart')
+    axios.get('http://54.200.64.7:3000/cart')
         .then(response => {
             const products = response.data.products;
             return products;
@@ -199,7 +199,7 @@ orderNow.addEventListener('click', placeOrder);
 
 function placeOrder() {
     console.log("Order Placed");
-    axios.post('http://localhost:3000/create-order')
+    axios.post('http://54.200.64.7:3000/create-order')
         .then(response => {
             if (response.status === 200) {
                 notifyUsers(response.data.message);
